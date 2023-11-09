@@ -51,6 +51,8 @@ if bbox:
             elif ix_center_e < int(ew/2):
                 print('left')
 
+# Save the face image
+cv.imwrite('data/cv2_face.jpg', face_img2)
 # Display the processed face image
 cv.imshow('eye_roi', face_img2)
 cv.waitKey(0)
